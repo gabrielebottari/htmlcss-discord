@@ -20,12 +20,30 @@ body {
     margin: 0 auto;
 }
 
+a {
+    text-decoration: none;
+}
+
+.button {
+    padding: 10px 15px;
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+}
+
+.button.dark {
+    color: white;
+    background-color: #23272A;
+    border: 1px solid #23272A;
+}
+
 /* 
     HEADER
 */
 
 header {
-    background-color: #add8e6;
+    background-color: #255ee9;
 }
 
 .header-nav {
@@ -37,6 +55,27 @@ header {
 .header-top-container {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.header-nav li {
+    display: inline-block;
+}
+
+li a {
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header-background-bottom {
+    background-image: url(../img/jumbo.png);
+    background-position: center;
+    background-size: cover;
+}
+
+nav .button-container {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .header-bottom-container {
@@ -53,7 +92,7 @@ header {
     padding: 10px;   
 }
 
-aside div {
+aside a {
     justify-content: flex-end;
 }
 
@@ -62,20 +101,37 @@ header aside {
     display: flex;
 }
 
-aside:last-child {
-    justify-content: flex-end;
-}
-
 header main {
     width: 60%;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
+.jumbotron > * {
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    padding: 100px 0 30px 0;
+}
+
+.jumbotron p {
+    line-height: 30px;
+    font-size: 1,5em;
+    padding-bottom: 30px;
+}
+
 .header-section > * {
-    width: 75%;
+    width: 60%;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+form {
+    margin-bottom: 80px;
 }
 
 /* 
@@ -102,6 +158,10 @@ section aside {
 
 section main {
     width: 60%;
+}
+
+main img {
+    width: 100%;
 }
 
 section div {
@@ -157,25 +217,25 @@ section div {
     DEBUG
 */
 
-.header-background {
+/*.header-background {
     background-color: #add8e6;
-}
+}*/
 
-.header-nav > * {
+/*.header-nav > * {
     background-color: #daa520;
     border: 1px dashed black;
-}
+}*/
 
-.header-background-bottom {
+/*.debug .header-background-bottom {
     background-color: #00008b;
-}
+}*/
 
-.header-section > section {
+/*.header-section > section {
     
     background-color:#ee82ee;
     border: 1px dashed black;
     min-height: 300px;
-}
+}*/
 
 section aside {
     background-color: #ffc0cb;
@@ -183,11 +243,11 @@ section aside {
     min-height: 500px;
 }
 
-section main {
+/*section main {
     background-color: #1e90ff;
     border: 1px dashed black;
     min-height: 500px;
-}
+}*/
 
 section div {
     background-color: #228b22;
