@@ -203,6 +203,11 @@ h2 {
     margin: 0 auto;
 }
 
+.background-main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .bg-last-section {
     background-image: url(../img/stars.svg);
     background-position: center;
@@ -215,6 +220,33 @@ h2 {
     font-size: 1.5em;
     font-weight: bold;
 }
+
+.bonus-img {
+    filter: invert(100%) 
+            sepia(3%) 
+            saturate(15%) 
+            hue-rotate(139deg) 
+            brightness(114%) 
+            contrast(93%);
+    display: inline-block;
+}
+
+.bonus-img.flip {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+}
+
 
 /* 
     FOOTER
@@ -373,3 +405,11 @@ hr {
     background-color: #ffb6c1;
     border: 1px dashed black;
 }*/
+
+/*.background-main-container::before {
+    content:"";
+    display: ;
+    background-image: url(../img/wave.svg);
+}*/
+
+
