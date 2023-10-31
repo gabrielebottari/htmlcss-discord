@@ -144,6 +144,10 @@ form {
     MAIN
 */
 
+.background-main-container:nth-of-type(2n+2) {
+    background-color: #F6F6F6;
+}
+
 .section-container, .big-section {
     max-width: 1200px;
     margin: 0 auto;
@@ -216,6 +220,11 @@ h2 {
     FOOTER
 */
 
+.footer-background {
+    background-color: #23272A;
+}
+
+
 .footer-top-container{
     max-width: 1200px;
     margin: 0 auto;
@@ -227,8 +236,32 @@ h2 {
     margin-bottom: 30px;
 }
 
+.footer-side h3 {
+    color: #7289da;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p img {
+    width: 25px;
+}
+
+.footer-top-container * {
+    color: white;
+}
+
 .footer-side {
     width: 30%;
+    padding: 30px 30px 30px 0;
+}
+
+.footer-side > * {
+    line-height: 30px;
+}
+
+.loghi {
+    font-size: 1.3em;
+    letter-spacing: 5px;
 }
 
 .footer-col {
@@ -240,22 +273,43 @@ h2 {
     width:25%;
 }
 
+.footer-top-nav {
+    padding: 30px;
+    line-height: 30px;
+}
+
+.footer-top-nav li {
+    display: block;
+}
+
+.footer-top-nav h4 {
+    color: #7289da;
+}
+
 .footer-bottom-container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.footer-nav {
+.footer-bottom-nav {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    padding: 30px 0 50px 0;
 }
 
-.footer-nav * {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
+.footer-bottom-container button {
+    padding: 10px 0;
 }
+
+hr {
+    max-width: 1200px;
+    background-color: #7289da;
+    color: #7289da;
+    height: 2px;
+    margin: 0 auto;
+    border: #7289da;
+}
+
 
 /* 
     DEBUG
@@ -299,31 +353,23 @@ h2 {
     min-height: 600px;
 }*/
 
-.background-main-container:nth-of-type(2n+2) {
-    background-color: #d3d3d3;
-}
-
-.footer-background {
-    background-color: #23272a;
-}
-
-.footer-side {
+/*.footer-side {
     background-color: #f08080;
     border: 1px dashed black;
     min-height: 500px;
-}
+}*/
 
-.footer-col section {
+/*.footer-col section {
     background-color: #20b2aa;
     border: 1px dashed white;
     min-height: 500px;
-}
+}*/
 
-.footer-nav {
+/*.footer-bottom-nav {
     background-color: #7fffd4;
 }
 
-.footer-nav > * {
+.footer-bottom-nav > * {
     background-color: #ffb6c1;
     border: 1px dashed black;
-}
+}*/
