@@ -1,0 +1,225 @@
+/* 
+    RESET
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+    GENERAL
+*/
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0 auto;
+}
+
+/* 
+    HEADER
+*/
+
+header {
+    background-color: #add8e6;
+}
+
+.header-nav {
+    display: flex;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.header-top-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-bottom-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-section {
+    display: flex;
+    justify-content: center;
+}
+
+.header-nav > * {
+    padding: 10px;   
+}
+
+aside div {
+    justify-content: flex-end;
+}
+
+header aside {
+    width: 20%;
+    display: flex;
+}
+
+aside:last-child {
+    justify-content: flex-end;
+}
+
+header main {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.header-section > * {
+    width: 75%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* 
+    MAIN
+*/
+
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-container > * {
+    display: flex;
+}
+
+.section-container > section > * {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+section aside {
+    width: 40%;
+}
+
+section main {
+    width: 60%;
+}
+
+section div {
+    width: 100%;
+}
+
+/* 
+    FOOTER
+*/
+
+.footer-top-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.footer-top-container > * {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-side {
+    width: 30%;
+}
+
+.footer-col {
+    width: 70%;
+    display: flex;
+}
+
+.footer-col section {
+    width:25%;
+}
+
+.footer-bottom-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.footer-nav * {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* 
+    DEBUG
+*/
+
+.header-background {
+    background-color: #add8e6;
+}
+
+.header-nav > * {
+    background-color: #daa520;
+    border: 1px dashed black;
+}
+
+.header-background-bottom {
+    background-color: #00008b;
+}
+
+.header-section > section {
+    
+    background-color:#ee82ee;
+    border: 1px dashed black;
+    min-height: 300px;
+}
+
+section aside {
+    background-color: #ffc0cb;
+    border: 1px dashed black;
+    min-height: 500px;
+}
+
+section main {
+    background-color: #1e90ff;
+    border: 1px dashed black;
+    min-height: 500px;
+}
+
+section div {
+    background-color: #228b22;
+    border: 1px dashed black;
+    min-height: 600px;
+}
+
+.background-main-container:nth-of-type(2n+2) {
+    background-color: #d3d3d3;
+}
+
+.footer-background {
+    background-color: #23272a;
+}
+
+.footer-side {
+    background-color: #f08080;
+    border: 1px dashed black;
+    min-height: 500px;
+}
+
+.footer-col section {
+    background-color: #20b2aa;
+    border: 1px dashed white;
+    min-height: 500px;
+}
+
+.footer-nav {
+    background-color: #7fffd4;
+}
+
+.footer-nav > * {
+    background-color: #ffb6c1;
+    border: 1px dashed black;
+}
